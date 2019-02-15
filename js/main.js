@@ -21,6 +21,11 @@ function initMap()
   resizeMapBounds();
 }
 
+function gm_authFailure()
+{
+  alert('Google maps failed to load!');
+}
+
 function addMarker(location) {
   marker = new google.maps.Marker({
     map: map,
